@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121711844-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-121711844-1');
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zhao Li</title>
+	<link rel="icon" type="image/png" href="logo.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><div class="img"><img src="logo_white.png" alt="Zhao Li"></div></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">About</a></li>
+					<li><a href="Zhao Li Resume.pdf">Resumé</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<h1>Hello. I'm Zhao Li.</h1>
+			<p>Welcome to my personal website!</p>
+			<br>
+			<p>
+				<a class="btn btn-primary btn-lg" href="Zhao Li Resume.pdf" role="button">Resumé</a>
+				<a class="btn btn-primary btn-lg" href="#projects" role="button">Projects</a>
+			</p>
+			<p>
+				<a href="mailto:z589li@uwaterloo.ca"><i class="fa fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/zhao-li-4b4954b9/"><i class="fa fa-linkedin-square"></i></a>
+				<a href="https://github.com/ZhaoLiEric"><i class="fa fa-github"></i></a>
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<article id="about">
+				<div class="col-md-5">
+					<img class="img-responsive center-block img-circle" src="headshot.jpg">
+				</div> 
+				<div class="col-md-7">
+					<h1>About Me</h1>
+					<p>I graduated from Electrical and Computer Engineering Department at the University of Waterloo and an aspiring software engineer. I am passionate about backend software development and I love building elegant, efficient and scalable software that drive impactful products.</p>
+					<p>On the side, I am a huge fan for travelling and have visited New York, Chicago, philadelphia and Seattle in United States and more than half of the provinces in Canada. I also love to play basketball and proud to be a new Torontoer. Let's go Raptors! I love reading history book and Science fiction, I love pop music and now I am listening the Yodal, which is so funny and I love it so much.</p>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<div class="container">
+		<br>
+		<article id="projects">
+			<h1 style="text-align: center">My Projects</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Biquadris</h3>
+					<a href="https://github.com/ZhaoLiEric/Biquadris"><img class="img-responsive center-block project-logo img-rounded" src="biquadris1.png"></a>
+					<br>
+					<p class="project-text">The game of Biquadris is a Latinization of the well-known game Tetris, consisting of two players competition and seven different types of blocks (with one additional star block). A player obtain scores for filling all the cells of one line, as well as deleting all the cells of one block, where different levels significantly impact the amount of score. One player’s game is over when a new block cannot be properly fitted on the game board. During a player’s turn, the block that the opponent will have to play next is already at the top of the opponent’s board and if it does not fit, the opponent has lost. Player can choose to start a new game or quit when a game is over.</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Real-time Rumour Analysis with PySpark</h3>
+					<a href="https://github.com/ZhaoLiEric/pyspark-rumor-detection"><img class="img-responsive center-block project-logo img-rounded" src="rumor.jpeg"></a>
+					<br>
+					<p class="project-text">I built a real-time rumour analysis pipeline for tweets in PySpark, which utilizes Spark SQL, Spark ML and Spark Structured Streaming. We use a publicly available dataset of tweets that have been annotated for subtasks related to rumour analysis. This dataset is provided by the organizer of RumourEval 2019 competition, which consists of two subtasks, namely stance detection and rumour veracity classification. We train a traditional machine learning model using manually extracted features for the two tasks separately and compare our results to existing deep learning approaches. We then use one of our models to analyze tweets being posted in real time using the PySpark Structured Streaming API. While most of the current research being done in NLP is focused on deep learning (which primarily uses GPU clusters), the sheer volume of social media posts means there is still value in training traditional machine learning models that can be run on massively parallel CPU clusters.View the code on <a href="https://github.com/uwblueprint/plasta">GitHub</a>.</p>
+				</div>
+				<div class="col-md-4">
+					<h3>B2C Shopping Application</h3>
+					<a href="https://github.com/ZhaoLiEric/B2CShopping"><img class="img-responsive center-block project-logo img-rounded" src="B2C.png"></a>
+					<br>
+					<p class="project-text">Building a B2C shopping web application based on springboot and springcloud, which I built a microservice for users to shop and order items online. the application have Commodity management microservice, including the management of commodity classification, brand, commodity specifications and other information. Sales management, including order statistics, order refund processing, and user management, including user control, freezing, unlocking, etc. Statistics, display of statistical analysis of various data.
+                    <!--
+                    <a href="https://devpost.com/software/textbookify">Devpost</a> and <a href="https://github.com/sherryhli/textbookify">GitHub</a> -->
+                    </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Movie Review Prediction System</h3>
+					<a href="https://github.com/ZhaoLiEric/movie_prediction"><img class="img-responsive center-block project-logo img-rounded" src="movie_rating.jpg"></a>
+					<br>
+					<p class="project-text">Recently, graphical neural networks (GNN) has attracts great attention, where a variety of NLP problems can be best expressed with a graph structure. For instance, the sentence structural information in text sequence can be represented by syntactic parsing trees. However, the application of GNN techniques on the problem of text regression has not been well studied. In this project, the movie review sentiment prediction task is used as a downstream task to study the performance of different GNNs techniques, and a GNN-based movie review prediction system is implemented, which predicts a numerical rating score ranging from 0 to 1 given a movie review text. By comparing different multiple variants of the graph construction, graph representation learning and node embedding initialization, a movie review prediction system with high accuracy is proposed.
+                    <!--Check it out on <a href="https://devpost.com/software/textmd-07cnif">Devpost</a> and <a href="https://github.com/sherryhli/TextMD">GitHub</a>.--></p>
+				</div>
+				<div class="col-md-4">
+					<h3>React Meets Up App</h3>
+					<a href="https://github.com"><img class="img-responsive center-block project-logo img-rounded" src="learning.jpg"></a>
+					<br>
+					<p class="project-text">Still on the way to learn it, hopefully I could done it within one month.</p>
+				</div>
+			</div>
+		</article>
+	</div>
+
+	<br>
+	<div class="container">
+		<div class="blog">
+			<article id="blog">
+				<h1>Blog</h1>
+				<br>
+				<p>I've never tried my hand at blogging before, but I'd like to make a point of using this space to share my thoughts or interesting tidbits I learned. Expect some descriptions of programming projects, 'today-I-learned's, and reflections on readings or past experiences.</p>
+				<div class="blog-post">
+					<hr>
+					<h3>Two month on Leetcode</h3>
+					<p class="blog-date-stamp">February 03, 2022</p>
+					<p>Two month ago, I start to practise my coding ability using Leetcode. I know, for sure that I should start using that amazing website as much early as I can, but there are sooo much thing that I really want to learn at school. From OOD design to linux, from training machine learning models to using spark to tame the data. Well, I have to say I also really hope to know how to prove that P = NP or not(obviously from my point of view it can not be true...), well, that might be the reason why I hope to attend ECE606 WHICH is a course based on CLRS. Well, all courses are leant and two month pass, and I have passed almost 170 questions(cheers~~~). <a href="blog.html#a-year-of-github">Continue...</a></p>
+					<hr>
+					
+					<h3>One month experience living in midtown Toronto</h3>
+					<p class="blog-date-stamp">February 01, 2022</p>
+					<p>This might not be an very important day. But as a guy who live in Waterloo region(Let's go Warriors) for almost all the time I am in Canada, I really hope to experience how urban life looks like, then I lease a small apartment in midtown, even though it's on stage 3 so everywhere is locked down, I can still feel how vibrant city it is in Toronto, and I can't wait to experience more in the 6ix, and I will use this blog to record my life in Toronto. </p>
+					<div class="inner">
+						<hr>
+					</div>
+                    <!--
+					<p>Congratulations, you made it.</p>
+					<p>A year later, I can still recall the sense of relief and feelings of joy when I walked out of my final exam. Many of you are probably more than ready to put IB behind you, as you look ahead to travelling in your extended summer, or going on to post-secondary studies in the fall. Relish these few months to be carefree, you’ve earned it. <a href="blog.html#dear-bayview-ib-class-of-2018-reflections-of-a-grad-one-year-later">Continue...</a></p>
+					<hr>
+					<h3>The Not-So-Trivial Experiences of a Trivia Enthusiast</h3>
+					<p class="blog-date-stamp">March 6, 2018</p>
+					<p>One of the most important things I believe in is the value of being a lifelong learner. Not only does it broaden our horizons, but it also gives us a drive to accomplish more. Part of what inspired me to begin blogging was the opportunity it’d give me to share new things I learn regularly—holding me accountable to actively synthesize new information I come across. In the near future, I hope to have a collection of posts up, highlighting interesting takeaways from anything between my coursework, leisure readings, or life experiences.</p>
+					<p>What sparked my aspirations to be a lifelong learner? <a href="blog.html#the-not-son-trivial-experiences-of-a-trivia-enthusiast">Continue...</a></p>
+					<hr>
+                    -->
+				</div>
+			</article>
+		</div>					
+	</div>
+	<br>
+	<div class="contact-text">
+		<div class="container">
+			<article id="contact">
+				<h1>Contact Me</h1>
+				<p>Questions? Comments? Feel free to reach out to me!</p>
+				<p>
+					<i class="fa fa-envelope"></i><a href="mailto:z589li@uwaterloo.ca"> z589li@uwaterloo.ca</a>
+					<br>
+					<i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/zhao-li-4b4954b9/"> linkedin.com/in/zhao-li-4b4954b9</a>
+					<br>
+					<i class="fa fa-map-marker"></i> Toronto, ON
+				</p>
+			</article>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<hr>
+		<p>
+			<a href="mailto:z589li@uwaterloo.ca"><i class="fa fa-envelope"></i></a>
+			<a href="https://www.linkedin.com/in/zhao-li-4b4954b9/"><i class="fa fa-linkedin-square"></i></a>
+			<a href="https://github.com/ZhaoLiEric"><i class="fa fa-github"></i></a>
+		</p>
+		<p>&copy; Zhao Li, 2022</p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
